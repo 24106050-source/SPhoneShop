@@ -1,0 +1,427 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #20283a;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.top-header {
+    max-width: 1200px;
+    width: 92%;
+    min-height: 85px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #1769d2;
+    white-space: nowrap;
+}
+
+.search {
+    display: flex;
+    flex: 1;
+    max-width: 500px;
+}
+
+.search input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #d8dce5;
+    border-radius: 6px 0 0 6px;
+}
+
+.search button {
+    border: none;
+    padding: 0 18px;
+    color: white;
+    background-color: #1769d2;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+
+.support {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 15px;
+    border-top: 1px solid #f0f0f0;
+    overflow-x: auto;
+}
+
+nav a {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+nav a:hover,
+nav a.active {
+    color: #1769d2;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin: 30px 0 45px;
+}
+
+.category {
+    min-height: 185px;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.category h2 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.category ul {
+    list-style: none;
+    font-size: 13px;
+    color: #50596a;
+}
+
+.category li {
+    margin: 5px 0;
+}
+
+
+.category img {
+    width: 43%;
+    max-height: 145px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    background: transparent;
+}
+
+
+.iphone {
+    background-color: #e7f2ff;
+}
+
+.samsung {
+    background-color: #ffeded;
+}
+
+.accessory {
+    background-color: #e2f7ed;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.section-title h1 {
+    font-size: 28px;
+    margin: 5px 0;
+}
+
+.section-title p {
+    color: #737b89;
+    font-size: 14px;
+}
+
+.section-title .subtitle {
+    color: #1769d2;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.product {
+    position: relative;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product > img {
+    width: 100%;
+    height: 210px;
+    object-fit: contain;
+    padding: 15px;
+}
+
+.sale {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: white;
+    background-color: #e84c4f;
+    padding: 4px 9px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.product-info {
+    padding: 14px;
+}
+
+.brand {
+    color: #858c99;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.product h3 {
+    font-size: 14px;
+    min-height: 42px;
+    margin-bottom: 8px;
+}
+
+.price {
+    color: #e84c4f;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.old-price {
+    color: #999999;
+    text-decoration: line-through;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.product-info button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 12px;
+    border: 1px solid #1769d2;
+    border-radius: 6px;
+    background-color: #f3f7ff;
+    color: #1769d2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product-info button:hover {
+    color: white;
+    background-color: #1769d2;
+}
+
+.gallery {
+    margin: 45px 0;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.gallery-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery-list img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #f8f9fb;
+    border-top: 1px solid #e5e7eb;
+}
+
+.footer-content {
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 35px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.footer-content h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.footer-content a {
+    display: block;
+    font-size: 13px;
+    color: #626b7a;
+    margin: 8px 0;
+}
+
+.footer-content a:hover {
+    color: #1769d2;
+}
+
+.footer-content p {
+    font-size: 13px;
+    margin: 7px 0;
+}
+
+.footer-content input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d8dce5;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.footer-content button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #1769d2;
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #e5e7eb;
+    color: #777777;
+    font-size: 12px;
+}
+
+@media (max-width: 850px) {
+    .top-header {
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+
+    .search {
+        order: 3;
+        flex-basis: 100%;
+        max-width: none;
+    }
+
+    nav {
+        justify-content: flex-start;
+        gap: 22px;
+    }
+
+    .categories {
+        grid-template-columns: 1fr;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .support {
+        display: none;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .category {
+        min-height: 150px;
+        padding: 12px;
+    }
+
+    .category h2 {
+        font-size: 15px;
+    }
+
+    .category ul {
+        font-size: 12px;
+    }
+
+    .product-list {
+        gap: 10px;
+    }
+
+    .product > img {
+        height: 150px;
+        padding: 8px;
+    }
+
+    .product-info {
+        padding: 10px;
+    }
+
+    .product h3 {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 13px;
+    }
+
+    .gallery-list img {
+        height: 120px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
